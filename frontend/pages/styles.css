@@ -3,6 +3,34 @@ body {
     background: linear-gradient(90deg, rgba(179, 97, 215, 1) 0%, rgba(233, 173, 173, 1) 35%, rgba(20, 29, 70, 1) 100%);
 }
 
-.navbarcolor{
-    background-color: white !important;
+.content {
+    margin-left: 70px; /* Leave space for the navbar */
+    padding: 15px;
+}
+
+#popoutButton{
+    height:100%;
+    width:250px;
+
+}
+
+.navbar {
+    position: relative;
+    width: 250px; /* Adjust the width as needed */
+    height: 100%;
+    background-color: #333; /* Background color */
+    color: #fff;
+    overflow: hidden; /* Hide overflow to prevent popout from breaking layout */
+}
+
+/* Hidden popout content */
+.popout-content {
+    position: absolute;
+    top: 0;
+    right: -250px; /* Initial position off-screen to the right */
+    width: 250px; /* Match the popout width */
+    height: 100%; /* Custom background color */
+    color: #fff;
+    transition: right 1.2s; /* Custom animation duration */
+    z-index: 999; /* To ensure it appears above other content */
 }
