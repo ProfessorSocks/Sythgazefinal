@@ -3,19 +3,28 @@ body {
     background: linear-gradient(90deg, rgba(179, 97, 215, 1) 0%, rgba(233, 173, 173, 1) 35%, rgba(20, 29, 70, 1) 100%);
 }
 
+.containerright{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
 .content {
     margin-left: 70px; /* Leave space for the navbar */
     padding: 15px;
 }
 
 #popoutButton{
-    height:100%;
+    height: 30px;
     width:250px;
+}
 
+#popoutButton2{
+    height: 30px;
+    width:250px;
 }
 
 .navbar {
-    position: relative;
     width: 250px; /* Adjust the width as needed */
     height: 100%;
     background-color: #333; /* Background color */
